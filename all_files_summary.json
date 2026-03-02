@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor file serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting five implemented features related to the Careers section, including component creation, job listings, styling, animations, and navigation integration.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend component files describing the advertising agency website structure, including navigation, hero, about, services, portfolio, contact, careers, and footer sections.",
+  "frontend/index.css": "Tailwind CSS configuration with custom CSS variables defining light and dark theme color palettes using OKLCH color space, including sidebar, chart, and UI component tokens.",
+  "frontend/index.html": "HTML entry point for the React application with viewport meta tag, title 'Elite Agency', and script reference to main.tsx.",
+  "frontend/src/App.tsx": "Root React component rendering the complete single-page website layout with Navigation, Hero, About, Services, Portfolio, ContactForm, Careers sections, and Footer.",
+  "frontend/src/components/About.tsx": "About section component displaying 'WHO WE ARE' heading, agency description, mission/vision cards with icons (Target, Eye, Zap), and IntersectionObserver-based fade-in animations.",
+  "frontend/src/components/Careers.tsx": "Careers section component with 'JOIN OUR TEAM' heading, company culture description, and five job listings (Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer/Developer, Sales & Client Success Manager) displayed in a responsive grid with Apply Now buttons and fade-in animations.",
+  "frontend/src/components/ContactForm.tsx": "Contact form component with six validated fields (name, email, phone, company, service dropdown, message), form validation logic, submission handling with success message, and fade-in animations.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying brand info, quick navigation links, contact details, social media icons (Facebook, X, Instagram, LinkedIn), and copyright with a caffeine.ai attribution link.",
+  "frontend/src/components/Hero.tsx": "Hero section component with animated headline \"WE CREATE BOLD IDEAS\", tagline, call-to-action button that scrolls to contact section, and an animated scroll indicator.",
+  "frontend/src/components/Navigation.tsx": "Fixed navigation bar with logo, desktop/mobile menu toggle, smooth scrolling to sections (Home, About, Services, Portfolio, Careers, Contact), and scroll-based background styling.",
+  "frontend/src/components/Portfolio.tsx": "Portfolio section displaying a grid of four project cards with hover effects that reveal project details (title, category, description) over images.",
+  "frontend/src/components/Services.tsx": "Services section showcasing five service offerings (Branding, Digital Marketing, Social Media, Creative Strategy, Web Design) in a responsive grid with icons and hover animations.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an ICP backend actor instance using Internet Identity authentication, with query caching and automatic invalidation on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/index.css": "Main stylesheet with Tailwind directives, CSS custom properties for light/dark themes using OKLCH color space, custom golden color utilities, fade-in animation classes, and custom scrollbar styling.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient provider for data fetching and InternetIdentityProvider for authentication.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom colors (using OKLCH), typography, animations (accordion), and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project metadata tracking implemented features for an advertising agency website with black/golden/white theme, including hero section, about, services, portfolio, contact form, footer, and responsive design with animations."
+}

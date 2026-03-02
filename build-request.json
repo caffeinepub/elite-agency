@@ -1,0 +1,124 @@
+{
+  "kind": "build_request",
+  "title": "Add Careers section above footer",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Create a Careers section component positioned above the footer in the main page layout with company culture introduction including 'Join Our Team' headline and a brief paragraph about innovation, creativity, and performance-driven environment",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Short intro about company culture and growth opportunities",
+          "\"Join Our Team\" headline",
+          "Brief paragraph about innovation, creativity, and performance-driven environment"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Careers section appears above the Footer component in App.tsx",
+        "Section includes 'Join Our Team' as the main heading",
+        "Contains introductory paragraph about company culture and growth opportunities",
+        "Describes innovation, creativity, and performance-driven environment",
+        "Follows the existing black, golden yellow, and white color scheme"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Display 3-5 job listings in the Careers section with example positions: Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer/Developer, and Sales & Client Success Manager",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "List 3–5 example positions such as: Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer / Developer, Sales & Client Success Manager"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 3 job listings are displayed",
+        "Includes Digital Marketing Specialist position",
+        "Includes Paid Ads Manager position",
+        "Includes Social Media Strategist position",
+        "Includes Web Designer/Developer position",
+        "Includes Sales & Client Success Manager position",
+        "Job listings are displayed in a grid or card layout"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Each job listing must display job title, short description, location (Remote/On-site), and an 'Apply Now' button with golden yellow accent styling consistent with the site theme",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Each job listing should include: Job title, Short description, Location (Remote / On-site), \"Apply Now\" button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each job card displays the job title prominently",
+        "Each job card includes a short description of the role",
+        "Each job card shows location information (Remote or On-site)",
+        "Each job card has an 'Apply Now' button",
+        "Apply Now buttons use golden yellow accent color matching ContactForm submit button styling",
+        "Job cards have hover effects consistent with existing Portfolio and Services sections"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Implement fade-in animations for the Careers section using IntersectionObserver pattern consistent with existing About, Services, and Portfolio components",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Careers section uses IntersectionObserver for animation triggering",
+        "Section content fades in when scrolled into view",
+        "Animation timing and easing match existing sections",
+        "Job cards can have staggered fade-in effect similar to Portfolio cards"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Update Navigation component to include 'Careers' link that smoothly scrolls to the new Careers section",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation component includes 'Careers' link in both desktop and mobile menus",
+        "Careers link is positioned before Contact link",
+        "Clicking Careers link smoothly scrolls to Careers section",
+        "Mobile menu closes after clicking Careers link",
+        "Navigation link order remains: About, Services, Portfolio, Careers, Contact"
+      ]
+    }
+  ],
+  "constraints": [
+    "Position Careers section above Footer in App.tsx component hierarchy",
+    "Use existing black, golden yellow, and white color palette defined in index.css",
+    "Follow IntersectionObserver animation pattern used in About, Services, and Portfolio components",
+    "Maintain responsive design principles consistent with existing sections",
+    "Use Lucide React icons consistent with other sections",
+    "Apply hover effects similar to existing Services and Portfolio cards"
+  ],
+  "nonGoals": [
+    "Backend job posting management system",
+    "Actual job application form submission functionality",
+    "Database integration for job listings",
+    "Email notifications for job applications",
+    "Admin panel for managing job postings"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

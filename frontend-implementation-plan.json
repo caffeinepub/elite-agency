@@ -1,0 +1,109 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Careers Section Above Footer",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Create Careers section component with company culture introduction positioned above footer",
+      "acceptanceCriteria": [
+        "Careers section appears above the Footer component in App.tsx",
+        "Section includes 'Join Our Team' as the main heading",
+        "Contains introductory paragraph about company culture and growth opportunities",
+        "Describes innovation, creativity, and performance-driven environment",
+        "Follows the existing black, golden yellow, and white color scheme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Careers.tsx",
+          "operation": "create",
+          "description": "Create Careers component with 'Join Our Team' headline, company culture introduction paragraph describing innovation, creativity, and performance-driven environment. Use IntersectionObserver pattern for fade-in animations consistent with About, Services, and Portfolio components. Apply black, golden yellow, and white color scheme using existing CSS variables. Include section container with proper spacing and responsive layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Careers component above Footer component in the component hierarchy. Position it after ContactForm and before Footer to maintain the requested layout order."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Display 3-5 job listings with specified example positions",
+      "acceptanceCriteria": [
+        "At least 3 job listings are displayed",
+        "Includes Digital Marketing Specialist position",
+        "Includes Paid Ads Manager position",
+        "Includes Social Media Strategist position",
+        "Includes Web Designer/Developer position",
+        "Includes Sales & Client Success Manager position",
+        "Job listings are displayed in a grid or card layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Careers.tsx",
+          "operation": "modify",
+          "description": "Add job listings array containing all five positions: Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer/Developer, and Sales & Client Success Manager. Implement responsive grid layout for job cards (similar to Services and Portfolio grid patterns) that displays all job listings below the company culture introduction. Use consistent spacing and card styling with the existing site design."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Display job details and Apply Now button for each listing",
+      "acceptanceCriteria": [
+        "Each job card displays the job title prominently",
+        "Each job card includes a short description of the role",
+        "Each job card shows location information (Remote or On-site)",
+        "Each job card has an 'Apply Now' button",
+        "Apply Now buttons use golden yellow accent color matching ContactForm submit button styling",
+        "Job cards have hover effects consistent with existing Portfolio and Services sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Careers.tsx",
+          "operation": "modify",
+          "description": "Add job card component rendering within the grid that displays job title, short description, location (Remote/On-site), and 'Apply Now' button for each listing. Style buttons with golden yellow accent (bg-accent hover:bg-accent/90) matching ContactForm submit button. Implement hover effects on cards with transform and shadow transitions similar to Portfolio cards. Use Lucide React icons for location indicators consistent with site icon usage."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Implement fade-in animations using IntersectionObserver pattern",
+      "acceptanceCriteria": [
+        "Careers section uses IntersectionObserver for animation triggering",
+        "Section content fades in when scrolled into view",
+        "Animation timing and easing match existing sections",
+        "Job cards can have staggered fade-in effect similar to Portfolio cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Careers.tsx",
+          "operation": "modify",
+          "description": "Implement IntersectionObserver hook pattern (consistent with About, Services, Portfolio components) to trigger fade-in animations when section enters viewport. Add opacity and transform animations to section heading and introduction. Implement staggered fade-in for job cards using delay increments similar to Portfolio card animations. Use existing fade-in animation classes from index.css."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Add Careers navigation link with smooth scroll functionality",
+      "acceptanceCriteria": [
+        "Navigation component includes 'Careers' link in both desktop and mobile menus",
+        "Careers link is positioned before Contact link",
+        "Clicking Careers link smoothly scrolls to Careers section",
+        "Mobile menu closes after clicking Careers link",
+        "Navigation link order remains: About, Services, Portfolio, Careers, Contact"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Add 'Careers' navigation link to both desktop and mobile navigation menus, positioned after Portfolio and before Contact. Add smooth scroll handler targeting the Careers section ID. Ensure mobile menu close functionality is triggered on Careers link click (consistent with existing navigation link behavior). Maintain the specified link order: About, Services, Portfolio, Careers, Contact."
+        },
+        {
+          "path": "frontend/src/components/Careers.tsx",
+          "operation": "modify",
+          "description": "Add section ID attribute 'careers' to the main section container element to enable smooth scroll navigation targeting from the Navigation component."
+        }
+      ]
+    }
+  ]
+}

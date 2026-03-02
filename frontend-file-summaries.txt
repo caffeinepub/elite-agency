@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the complete advertising agency website with navigation, hero, about, services, portfolio, contact form, careers, and footer sections in a single-page layout.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar component with smooth scroll functionality, mobile hamburger menu, and desktop horizontal navigation links to all page sections including the new Careers link.",
+  "frontend/src/components/Hero.tsx": "Hero section component featuring large bold headline, tagline, CTA button with scroll-to-contact functionality, and fade-in animations using Intersection Observer.",
+  "frontend/src/components/About.tsx": "About Us section component displaying agency introduction, mission, vision, and value proposition with icon-enhanced cards and scroll-triggered animations.",
+  "frontend/src/components/Services.tsx": "Services section component showcasing five service cards (Branding, Digital Marketing, Social Media, Creative Strategy, Web Design) with icons, hover effects, and staggered animations.",
+  "frontend/src/components/Portfolio.tsx": "Portfolio section component displaying four case study projects in a responsive grid with image previews and golden yellow hover overlay effects revealing project details.",
+  "frontend/src/components/ContactForm.tsx": "Contact form component with six validated fields (name, email, phone, company, service dropdown, message), two-column desktop layout, and modern styling with golden yellow accents.",
+  "frontend/src/components/Footer.tsx": "Footer component with brand info, quick navigation links including Careers, contact details, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/index.css": "Global styles defining black/golden yellow/white color palette using OKLCH, smooth scrolling behavior, custom fade-in animations, golden scrollbar styling, and Inter font family.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom golden yellow color tokens, Inter font family, zero border radius for sharp edges, and extended theme for the black/white/golden design system.",
+  "frontend/src/components/Careers.tsx": "Careers section component displaying company culture introduction, \"Join Our Team\" headline, and five job listings (Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer/Developer, Sales & Client Success Manager) with job details, location, and Apply Now buttons using IntersectionObserver animations."
+}

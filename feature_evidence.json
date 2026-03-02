@@ -1,0 +1,97 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-careers-section-component-positioned-above-the-footer-in-the-main-page-layout-with-company-culture-introduction-including-join-our-team-headline-and-a-brief-paragraph-about-innovation-creativity-and-performance-driven-environment",
+      "featureTitle": "Create a Careers section component positioned above the footer in the main page layout with company culture introduction including 'Join Our Team' headline and a brief paragraph about innovation, creativity, and performance-driven environment",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Careers.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-3-5-job-listings-in-the-careers-section-with-example-positions-digital-marketing-specialist-paid-ads-manager-social-media-strategist-web-designer-developer-and-sales-client-success-manager",
+      "featureTitle": "Display 3-5 job listings in the Careers section with example positions: Digital Marketing Specialist, Paid Ads Manager, Social Media Strategist, Web Designer/Developer, and Sales & Client Success Manager",
+      "files": [
+        "frontend/src/components/Careers.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-each-job-listing-must-display-job-title-short-description-location-remote-on-site-and-an-apply-now-button-with-golden-yellow-accent-styling-consistent-with-the-site-theme",
+      "featureTitle": "Each job listing must display job title, short description, location (Remote/On-site), and an 'Apply Now' button with golden yellow accent styling consistent with the site theme",
+      "files": [
+        "frontend/src/components/Careers.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-fade-in-animations-for-the-careers-section-using-intersectionobserver-pattern-consistent-with-existing-about-services-and-portfolio-components",
+      "featureTitle": "Implement fade-in animations for the Careers section using IntersectionObserver pattern consistent with existing About, Services, and Portfolio components",
+      "files": [
+        "frontend/src/components/Careers.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-navigation-component-to-include-careers-link-that-smoothly-scrolls-to-the-new-careers-section",
+      "featureTitle": "Update Navigation component to include 'Careers' link that smoothly scrolls to the new Careers section",
+      "files": [
+        "frontend/src/components/Careers.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
